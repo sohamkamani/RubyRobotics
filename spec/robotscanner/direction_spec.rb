@@ -26,4 +26,10 @@ describe "Direction" do
     direction1.right
     expect(direction1.right).to eq(Direction.west)   
   end
+
+  it "should turn right thrice and thus face north" do
+    direction1.right
+    direction1.right
+    expect(direction1.right).to eq(Direction.north)   
+  end
 end
