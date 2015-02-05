@@ -39,4 +39,11 @@ describe "Direction" do
     direction1.left
     expect(direction1.left).to eq(Direction.east)
   end
+
+  it "should turn right four times and thus return to original position" do
+    direction1.right
+    direction1.right
+    direction1.right
+    expect(direction1.right).to eq(Direction.east)
+  end
 end
