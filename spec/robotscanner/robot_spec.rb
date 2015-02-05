@@ -1,20 +1,20 @@
 require "spec_helper"
 
 describe "Robot" do
-  let(:robot1) {Robot.new(Position.new(5,5),Direction.north)}
-  let(:robot2) {Robot.new(Position.new(5,5),Direction.north)}
-  let(:robot3) {Robot.new(Position.new(5,5),Direction.north)}
+  let(:robot1) {Robot.new(Position.new(5,5),Direction.north,Position.new(100,100))}
+  let(:robot2) {Robot.new(Position.new(5,5),Direction.north,Position.new(100,100))}
+  let(:robot3) {Robot.new(Position.new(5,5),Direction.north,Position.new(100,100))}
 
   it "should be able to turn right" do
-    expect(robot1.turn_right).to eq(Robot.new(Position.new(5,5),Direction.east))
+    expect(robot1.turn_right).to eq(Robot.new(Position.new(5,5),Direction.east,Position.new(100,100)))
   end
 
   it "should be able to turn left" do
-    expect(robot1.turn_left).to eq(Robot.new(Position.new(5,5),Direction.west))
+    expect(robot1.turn_left).to eq(Robot.new(Position.new(5,5),Direction.west,Position.new(100,100)))
   end
 
   it "should be able to move" do
-    expect(robot1.move).to eq(Robot.new(Position.new(5,6),Direction.north))
+    expect(robot1.move).to eq(Robot.new(Position.new(5,6),Direction.north,Position.new(100,100)))
   end
 
   it "should be represented as a string" do

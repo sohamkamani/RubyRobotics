@@ -8,13 +8,13 @@ class Parser
   def parse_robot(command_string)
     robot_props = command_string.split(" ")
     if(robot_props[2]=="NORTH")
-      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.north)
+      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.north, Position.new(robot_props[3].to_i,robot_props[4].to_i))
     elsif robot_props[2] == "SOUTH"
-      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.south)
+      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.south, Position.new(robot_props[3].to_i,robot_props[4].to_i))
     elsif robot_props[2] == "EAST"
-      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.east)
+      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.east, Position.new(robot_props[3].to_i,robot_props[4].to_i))
     elsif robot_props[2] == "WEST"
-      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.west)
+      robot = Robot.new(Position.new(robot_props[0].to_i,robot_props[1].to_i),Direction.west, Position.new(robot_props[3].to_i,robot_props[4].to_i))
     end
     return robot
   end

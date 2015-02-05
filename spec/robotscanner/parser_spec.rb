@@ -1,13 +1,14 @@
 require "spec_helper"
 describe "parser" do
   let(:parser) {Parser.new}
+  let(:max) {Position.new(100,100)}
 
   it "should parse boundary position" do
     expect(parser.parse_position("5 5")).to eq(Position.new(5,5))
   end
 
   it "should parse a robot" do
-    expect(parser.parse_robot("1 2 NORTH")).to eq(Robot.new(Position.new(1,2),Direction.north))
+    expect(parser.parse_robot("1 2 NORTH 5 5")).to eq(Robot.new(Position.new(1,2),Direction.north, max))
   end
 
   it "should parse a series of commands" do

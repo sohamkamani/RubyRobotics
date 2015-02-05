@@ -8,14 +8,14 @@ class Position
     @y = y
   end
 
-  def move(direction)
-    if direction == Direction.north
+  def move(direction, max)
+    if direction == Direction.north && @y<max.y
       @y +=1
-    elsif direction == Direction.east
+    elsif direction == Direction.east && @x<max.x
       @x +=1
-    elsif direction == Direction.south
+    elsif direction == Direction.south && @y>0
       @y -=1
-    elsif direction == Direction.west
+    elsif direction == Direction.west && @x>0
       @x -=1
     end
     return Position.new(@x,@y)

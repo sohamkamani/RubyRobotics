@@ -3,24 +3,25 @@ class Robot
 
   attr_reader :position,:direction
 
-  def initialize(position, direction)
+  def initialize(position, direction, max)
     @position = position
     @direction = direction
+    @max = max
   end
   
   def turn_right
     @direction = @direction.right
-    return Robot.new(@position,@direction)
+    return Robot.new(@position,@direction,@max)
   end
 
   def turn_left
     @direction = @direction.left
-    return Robot.new(@position,@direction)
+    return Robot.new(@position,@direction,@max)
   end
 
   def move
-    @position = @position.move(@direction)
-    return Robot.new(@position,@direction)
+    @position = @position.move(@direction, @max)
+    return Robot.new(@position,@direction,@max)
   end
 
   def ==(other)

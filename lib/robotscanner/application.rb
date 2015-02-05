@@ -10,11 +10,10 @@ class Application
     parser = Parser.new
 
     max_bound_position_string = gets.chomp
-    max_bound = parser.parse_position(max_bound_position_string)
 
     begin
       robot_command = gets.chomp
-      robot = parser.parse_robot(robot_command)
+      robot = parser.parse_robot(robot_command+" "+max_bound_position_string)
       command_string = gets.chomp
       commands = parser.parse_commands(command_string)
 
