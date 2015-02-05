@@ -37,5 +37,15 @@ class Direction
     self.direction == other.direction
   end
 
-
+  def to_s
+    if @direction == 0
+      return "NORTH"
+    elsif @direction == 1
+      return "EAST"
+    elsif @direction == 2
+      return "SOUTH"
+    elsif @direction == 3
+      return "WEST"
+    end
+  end
 end

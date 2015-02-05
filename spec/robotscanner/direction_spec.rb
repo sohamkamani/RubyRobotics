@@ -49,6 +49,10 @@ describe "Direction" do
     expect(direction1.right).to eq(Direction.east)
   end
 
+  it "should be represented as a string" do
+    expect(direction1.to_s).to eq("EAST")
+  end
+
   describe 'Equality' do
     it "follows reflexivity" do
       expect(direction1).to eq(direction1)
