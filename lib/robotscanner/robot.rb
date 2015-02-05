@@ -12,6 +12,11 @@ class Robot
     return Robot.new(@position,@direction)
   end
 
+  def turn_left
+    @direction = @direction.left
+    return Robot.new(@position,@direction)
+  end
+
   def ==(other)
     @position = other.position
     @direction = other.direction
