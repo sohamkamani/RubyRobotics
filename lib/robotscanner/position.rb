@@ -25,5 +25,9 @@ class Position
     (@x == other.x && @y == other.y)
   end
 
+  def to_s
+    @x.to_s + " " + @y.to_s
+  end
+
 
 end

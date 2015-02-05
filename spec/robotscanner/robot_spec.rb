@@ -17,6 +17,10 @@ describe "Robot" do
     expect(robot1.move).to eq(Robot.new(Position.new(5,6),Direction.north))
   end
 
+  it "should be represented as a string" do
+    expect(robot1.to_s).to eq("5 5 NORTH")
+  end
+
   describe 'Equality' do
     it "follows reflexivity" do
       expect(robot1).to eq(robot1)

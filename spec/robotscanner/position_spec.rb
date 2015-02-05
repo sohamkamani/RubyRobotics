@@ -21,6 +21,10 @@ describe "Position" do
     expect(position1.move(Direction.west)).to eq(Position.new(-1,0))
   end
 
+  it "should be represented as a string" do
+    expect(position1.to_s).to eq("0 0")
+  end
+
   describe 'Equality' do
     it "follows reflexivity" do
       expect(Position.new(0,0)).to eq(Position.new(0,0))

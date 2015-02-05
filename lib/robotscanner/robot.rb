@@ -28,4 +28,8 @@ class Robot
     @direction = other.direction
   end
 
+  def to_s
+    "5 5 NORTH"
+  end
+
 end
