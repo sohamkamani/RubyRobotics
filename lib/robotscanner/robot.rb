@@ -29,7 +29,7 @@ class Robot
   end
 
   def to_s
-    "5 5 NORTH"
+    @position.to_s + " " + @direction.to_s
   end
 
 end

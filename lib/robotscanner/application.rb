@@ -7,35 +7,35 @@ class Application
 
   def start
 
-    parser = Parser.new 
+    parser = Parser.new
 
     max_bound_position_string = gets.chomp
-    max_bound = parser.parse_position
-     
-     begin
-        robot_command = gets.chomp
-        robot = parser.parse_robot(robot_command)
-        command_string = gets.chomp
-        commands = parser.parse_commands(command_string)
+    max_bound = parser.parse_position(max_bound_position_string)
 
-        commands.each do |command|
-          command.execute(robot)
-        end
-        @robots.push(robot)
+    begin
+      robot_command = gets.chomp
+      robot = parser.parse_robot(robot_command)
+      command_string = gets.chomp
+      commands = parser.parse_commands(command_string)
 
-      end while input != 'exit'
-
-      @robots.each do |robot|
-        puts robot.to_s
+      commands.each do |command|
+        command.execute(robot)
       end
+      @robots.push(robot)
+
+    end while robot_command != 'exit'
+
+    @robots.each do |robot|
+      puts robot.to_s
     end
-
-
-    def start_test
-      parser = CalculatorParser.new
-      input = Kernel.gets.chomp
-      cmd = parser.parse(input)      
-    end
-
-
   end
+
+
+  def start_test
+    parser = Parser.new
+    max_bound_position_string = Kernel.gets.chomp
+    max_bound = parser.parse_position(max_bound_position_string)
+  end
+
+
+end

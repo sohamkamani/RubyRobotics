@@ -25,6 +25,8 @@ describe "Position" do
     expect(position1.to_s).to eq("0 0")
   end
 
+  it "should not move beyond max"
+
   describe 'Equality' do
     it "follows reflexivity" do
       expect(Position.new(0,0)).to eq(Position.new(0,0))
