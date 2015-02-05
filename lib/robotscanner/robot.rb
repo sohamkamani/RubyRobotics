@@ -1,3 +1,4 @@
+# a robot with the ability to mave and turn
 class Robot
 
   attr_reader :position,:direction

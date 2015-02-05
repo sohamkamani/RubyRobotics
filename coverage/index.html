@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T11:38:44+05:30">2015-02-05T11:38:44+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T11:45:23+05:30">2015-02-05T11:45:23+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.53
+         4.43
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>6</b> files in total.
-    <b>92</b> relevant lines. 
-    <span class="green"><b>92</b> lines covered</span> and
+    <b>8</b> files in total.
+    <b>101</b> relevant lines. 
+    <span class="green"><b>101</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,9 +53,9 @@
       <tr>
         <td class="strong"><a href="#4e176e782a65fb5c00e9f889140249bcfdf34877" class="src_link" title="lib/robotscanner.rb">lib/robotscanner.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -63,31 +63,51 @@
       <tr>
         <td class="strong"><a href="#c58f04bebad6eef4abf3950ab0eec96e506e406b" class="src_link" title="lib/robotscanner/direction.rb">lib/robotscanner/direction.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>40</td>
+        <td>41</td>
         <td>20</td>
         <td>20</td>
         <td>0</td>
-        <td>10.1</td>
+        <td>10.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#261d3fd443b829d03306035bb07a5bf94af0e05a" class="src_link" title="lib/robotscanner/left_command.rb">lib/robotscanner/left_command.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#9b14f69c090effa978c4a77bc36bf4a0401325a2" class="src_link" title="lib/robotscanner/position.rb">lib/robotscanner/position.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>28</td>
+        <td>29</td>
         <td>14</td>
         <td>14</td>
         <td>0</td>
-        <td>6.7</td>
+        <td>7.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#3f9dbfc93f841d4e14e2212fb059366908f8ab5d" class="src_link" title="lib/robotscanner/robot.rb">lib/robotscanner/robot.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>30</td>
+        <td>31</td>
         <td>17</td>
         <td>17</td>
         <td>0</td>
-        <td>3.6</td>
+        <td>4.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3fafd49ee4234886bc60f6b0ea52953ee148f276" class="src_link" title="spec/robotscanner/left_command_spec.rb">spec/robotscanner/left_command_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -131,8 +151,8 @@
     <h3>lib/robotscanner.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -158,6 +178,12 @@
           <code class="ruby">require &quot;robotscanner/robot&quot;</code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;robotscanner/left_command&quot;</code>
+        </li>
+      
     </ol>
   </pre>
 </div>
@@ -176,232 +202,232 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby">#description of the direction of anything</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">class Direction</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  attr_reader :direction</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(direction)</code>
         </li>
       
-        <li class="covered" data-hits="71" data-linenumber="6">
-          <span class="hits">71</span>
+        <li class="covered" data-hits="74" data-linenumber="7">
+          <span class="hits">74</span>
           
           <code class="ruby">    @direction = direction</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.north</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="10">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="19" data-linenumber="11">
+          <span class="hits">19</span>
           
           <code class="ruby">    self.new(0)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.east</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="14">
+        <li class="covered" data-hits="21" data-linenumber="15">
           <span class="hits">21</span>
           
           <code class="ruby">    self.new(1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.south</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
+        <li class="covered" data-hits="5" data-linenumber="19">
           <span class="hits">5</span>
           
           <code class="ruby">    self.new(2)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.west</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="22">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="23">
+          <span class="hits">6</span>
           
           <code class="ruby">    self.new(3)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  def left</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="26">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="27">
+          <span class="hits">12</span>
           
           <code class="ruby">    @direction = (@direction - 1) % 4</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="27">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="28">
+          <span class="hits">12</span>
           
           <code class="ruby">    return Direction.new(@direction)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  def right</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="31">
+        <li class="covered" data-hits="11" data-linenumber="32">
           <span class="hits">11</span>
           
           <code class="ruby">    @direction = (@direction + 1) % 4</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="32">
+        <li class="covered" data-hits="11" data-linenumber="33">
           <span class="hits">11</span>
           
           <code class="ruby">    return Direction.new(@direction)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">  def ==(other)</code>
         </li>
       
-        <li class="covered" data-hits="27" data-linenumber="36">
+        <li class="covered" data-hits="27" data-linenumber="37">
           <span class="hits">27</span>
           
           <code class="ruby">    self.direction == other.direction</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -411,6 +437,60 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="261d3fd443b829d03306035bb07a5bf94af0e05a">
+  <div class="header">
+    <h3>lib/robotscanner/left_command.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class LeftCommand</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def execute(robot)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    robot.turn_left</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -434,160 +514,160 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby">#description of the position of everything</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">class Position</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  attr_reader :x,:y</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(x,y)</code>
         </li>
       
-        <li class="covered" data-hits="32" data-linenumber="6">
-          <span class="hits">32</span>
+        <li class="covered" data-hits="34" data-linenumber="7">
+          <span class="hits">34</span>
           
           <code class="ruby">    @x = x</code>
         </li>
       
-        <li class="covered" data-hits="32" data-linenumber="7">
-          <span class="hits">32</span>
+        <li class="covered" data-hits="34" data-linenumber="8">
+          <span class="hits">34</span>
           
           <code class="ruby">    @y = y</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def move(direction)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="11">
+        <li class="covered" data-hits="5" data-linenumber="12">
           <span class="hits">5</span>
           
           <code class="ruby">    if direction == Direction.north</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
+        <li class="covered" data-hits="2" data-linenumber="13">
           <span class="hits">2</span>
           
           <code class="ruby">      @y +=1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">    elsif direction == Direction.east</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">      @x +=1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">    elsif direction == Direction.south</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">      @y -=1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">    elsif direction == Direction.west</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">      @x -=1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="20">
+        <li class="covered" data-hits="5" data-linenumber="21">
           <span class="hits">5</span>
           
           <code class="ruby">    return Position.new(@x,@y)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">  def ==(other)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="24">
+        <li class="covered" data-hits="10" data-linenumber="25">
           <span class="hits">10</span>
           
           <code class="ruby">    (@x == other.x &amp;&amp; @y == other.y)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -597,6 +677,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">end</code>
@@ -620,10 +706,214 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># a robot with the ability to mave and turn</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">class Robot</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader :position,:direction</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(position, direction)</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="7">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    @position = position</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="8">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    @direction = direction</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def turn_right</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @direction = @direction.right</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    return Robot.new(@position,@direction)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def turn_left</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @direction = @direction.left</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="18">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    return Robot.new(@position,@direction)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def move</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @position = @position.move(@direction)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    return Robot.new(@position,@direction)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def ==(other)</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="27">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @position = other.position</code>
+        </li>
+      
+        <li class="covered" data-hits="10" data-linenumber="28">
+          <span class="hits">10</span>
+          
+          <code class="ruby">    @direction = other.direction</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3fafd49ee4234886bc60f6b0ea52953ee148f276">
+  <div class="header">
+    <h3>spec/robotscanner/left_command_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;spec_helper&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -635,31 +925,31 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :position,:direction</code>
+          <code class="ruby">describe &quot;LeftCommand&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  let(:cmd) { LeftCommand.new}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  def initialize(position, direction)</code>
+          <code class="ruby">  it &quot;should make a robot turn left&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="6">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
-          <code class="ruby">    @position = position</code>
-        </li>
-      
-        <li class="covered" data-hits="15" data-linenumber="7">
-          <span class="hits">15</span>
-          
-          <code class="ruby">    @direction = direction</code>
+          <code class="ruby">    expect(cmd.execute(Robot.new(Position.new(0,0),Direction.north))).to eq(Robot.new(Position.new(0,0),Direction.west))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -669,132 +959,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def turn_right</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @direction = @direction.right</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    return Robot.new(@position,@direction)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def turn_left</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @direction = @direction.left</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    return Robot.new(@position,@direction)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def move</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @position = @position.move(@direction)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    return Robot.new(@position,@direction)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def ==(other)</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="26">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    @position = other.position</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="27">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    @direction = other.direction</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>

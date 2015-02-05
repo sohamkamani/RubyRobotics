@@ -1,3 +1,4 @@
+#description of the position of everything
 class Position
 
   attr_reader :x,:y

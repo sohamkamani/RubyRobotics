@@ -1,3 +1,4 @@
+#description of the direction of anything
 class Direction
 
   attr_reader :direction
