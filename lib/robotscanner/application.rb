@@ -22,7 +22,7 @@ class Application
       end
       @robots.push(robot)
 
-    end while robot_command != 'exit'
+    end while robot_command != 'exit' && command_string!='exit'
 
     @robots.each do |robot|
       puts robot.to_s
