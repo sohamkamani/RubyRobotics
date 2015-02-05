@@ -2,7 +2,6 @@ require "spec_helper"
 
 describe "Direction" do
 	let(:direction1) { Direction.east}
-	let(:direction2) {Direction.north}
 
 	it "should turn left" do
 		expect(direction1.left).to eq(Direction.north)
@@ -12,4 +11,14 @@ describe "Direction" do
 		direction1.left
     expect(direction1.left).to eq(Direction.west)		
 	end
+
+  it "should turn left thrice and thus face south" do
+    direction1.left
+    direction1.left
+    expect(direction1.left).to eq(Direction.south)   
+  end
+
+  it "should turn right once, thus facing south" do
+    expect(direction1.right).to eq(Direction.south)
+  end
 end
