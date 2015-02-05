@@ -14,6 +14,8 @@ class Position
       @x +=1
     elsif direction == Direction.south
       @y -=1
+    elsif direction == Direction.west
+      @x -=1
     end
     return Position.new(@x,@y)
   end
