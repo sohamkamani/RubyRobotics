@@ -7,11 +7,15 @@ class Direction
 	end
 
 	def self.north
-		self.new(1)
+		self.new(0)
 	end
 
 	def self.east
-		self.new(2)
+		self.new(1)
+	end
+
+	def self.west
+		self.new(3)
 	end
 
 	def left
