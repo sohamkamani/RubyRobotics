@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T11:45:23+05:30">2015-02-05T11:45:23+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-02-05T11:47:32+05:30">2015-02-05T11:47:32+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.43
+         4.36
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>8</b> files in total.
-    <b>101</b> relevant lines. 
-    <span class="green"><b>101</b> lines covered</span> and
+    <b>10</b> files in total.
+    <b>110</b> relevant lines. 
+    <span class="green"><b>110</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,9 +53,9 @@
       <tr>
         <td class="strong"><a href="#4e176e782a65fb5c00e9f889140249bcfdf34877" class="src_link" title="lib/robotscanner.rb">lib/robotscanner.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>4</td>
-        <td>4</td>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -67,7 +67,7 @@
         <td>20</td>
         <td>20</td>
         <td>0</td>
-        <td>10.4</td>
+        <td>10.8</td>
       </tr>
       
       <tr>
@@ -87,7 +87,17 @@
         <td>14</td>
         <td>14</td>
         <td>0</td>
-        <td>7.0</td>
+        <td>7.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1f68d1a877e8f041fede784de43c61cc6bf281ba" class="src_link" title="lib/robotscanner/right_command.rb">lib/robotscanner/right_command.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -97,7 +107,7 @@
         <td>17</td>
         <td>17</td>
         <td>0</td>
-        <td>4.2</td>
+        <td>4.8</td>
       </tr>
       
       <tr>
@@ -118,6 +128,16 @@
         <td>20</td>
         <td>0</td>
         <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4094bc3bb44e9309586ec0cd89664e42245c10ff" class="src_link" title="spec/robotscanner/right_command_spec.rb">spec/robotscanner/right_command_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -151,8 +171,8 @@
     <h3>lib/robotscanner.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -182,6 +202,12 @@
           <span class="hits">1</span>
           
           <code class="ruby">require &quot;robotscanner/left_command&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;robotscanner/right_command&quot;</code>
         </li>
       
     </ol>
@@ -238,8 +264,8 @@
           <code class="ruby">  def initialize(direction)</code>
         </li>
       
-        <li class="covered" data-hits="74" data-linenumber="7">
-          <span class="hits">74</span>
+        <li class="covered" data-hits="77" data-linenumber="7">
+          <span class="hits">77</span>
           
           <code class="ruby">    @direction = direction</code>
         </li>
@@ -262,8 +288,8 @@
           <code class="ruby">  def self.north</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="11">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="20" data-linenumber="11">
+          <span class="hits">20</span>
           
           <code class="ruby">    self.new(0)</code>
         </li>
@@ -286,8 +312,8 @@
           <code class="ruby">  def self.east</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="15">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="22" data-linenumber="15">
+          <span class="hits">22</span>
           
           <code class="ruby">    self.new(1)</code>
         </li>
@@ -388,14 +414,14 @@
           <code class="ruby">  def right</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="32">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="32">
+          <span class="hits">12</span>
           
           <code class="ruby">    @direction = (@direction + 1) % 4</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="33">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="12" data-linenumber="33">
+          <span class="hits">12</span>
           
           <code class="ruby">    return Direction.new(@direction)</code>
         </li>
@@ -550,14 +576,14 @@
           <code class="ruby">  def initialize(x,y)</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="7">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="7">
+          <span class="hits">36</span>
           
           <code class="ruby">    @x = x</code>
         </li>
       
-        <li class="covered" data-hits="34" data-linenumber="8">
-          <span class="hits">34</span>
+        <li class="covered" data-hits="36" data-linenumber="8">
+          <span class="hits">36</span>
           
           <code class="ruby">    @y = y</code>
         </li>
@@ -692,6 +718,54 @@
   </pre>
 </div>
       
+        <div class="source_table" id="1f68d1a877e8f041fede784de43c61cc6bf281ba">
+  <div class="header">
+    <h3>lib/robotscanner/right_command.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class RightCommand</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def execute(robot)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    robot.turn_right</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="3f9dbfc93f841d4e14e2212fb059366908f8ab5d">
   <div class="header">
     <h3>lib/robotscanner/robot.rb</h3>
@@ -742,14 +816,14 @@
           <code class="ruby">  def initialize(position, direction)</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="7">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="21" data-linenumber="7">
+          <span class="hits">21</span>
           
           <code class="ruby">    @position = position</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="8">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="21" data-linenumber="8">
+          <span class="hits">21</span>
           
           <code class="ruby">    @direction = direction</code>
         </li>
@@ -772,14 +846,14 @@
           <code class="ruby">  def turn_right</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    @direction = @direction.right</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
           
           <code class="ruby">    return Robot.new(@position,@direction)</code>
         </li>
@@ -862,14 +936,14 @@
           <code class="ruby">  def ==(other)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="27">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="27">
+          <span class="hits">11</span>
           
           <code class="ruby">    @position = other.position</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="28">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="28">
+          <span class="hits">11</span>
           
           <code class="ruby">    @direction = other.direction</code>
         </li>
@@ -1199,6 +1273,78 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="4094bc3bb44e9309586ec0cd89664e42245c10ff">
+  <div class="header">
+    <h3>spec/robotscanner/right_command_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;spec_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;RightCommand&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  let(:cmd) { RightCommand.new}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;should make a robot turn right&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(cmd.execute(Robot.new(Position.new(0,0),Direction.north))).to eq(Robot.new(Position.new(0,0),Direction.east))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>

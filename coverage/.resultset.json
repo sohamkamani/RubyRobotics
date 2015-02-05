@@ -5,6 +5,7 @@
         1,
         1,
         1,
+        1,
         1
       ],
       "/Users/sohamchetan/Documents/Robotics/lib/robotscanner/direction.rb": [
@@ -14,15 +15,15 @@
         1,
         null,
         1,
-        74,
+        77,
         null,
         null,
         1,
-        19,
+        20,
         null,
         null,
         1,
-        21,
+        22,
         null,
         null,
         1,
@@ -39,8 +40,8 @@
         null,
         null,
         1,
-        11,
-        11,
+        12,
+        12,
         null,
         null,
         1,
@@ -57,8 +58,8 @@
         1,
         null,
         1,
-        34,
-        34,
+        36,
+        36,
         null,
         null,
         1,
@@ -88,13 +89,13 @@
         1,
         null,
         1,
-        18,
-        18,
+        21,
+        21,
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -108,13 +109,20 @@
         null,
         null,
         1,
-        10,
-        10,
+        11,
+        11,
         null,
         null,
         null
       ],
       "/Users/sohamchetan/Documents/Robotics/lib/robotscanner/left_command.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/sohamchetan/Documents/Robotics/lib/robotscanner/right_command.rb": [
         1,
         1,
         1,
@@ -171,6 +179,17 @@
         null,
         null
       ],
+      "/Users/sohamchetan/Documents/Robotics/spec/robotscanner/right_command_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/sohamchetan/Documents/Robotics/spec/robotscanner/robot_spec.rb": [
         1,
         null,
@@ -208,6 +227,6 @@
         null
       ]
     },
-    "timestamp": 1423116923
+    "timestamp": 1423117052
   }
 }
