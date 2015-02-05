@@ -12,4 +12,8 @@ describe "Robot" do
     expect(robot1.turn_left).to eq(Robot.new(Position.new(5,5),Direction.west))
   end
 
+  it "should be able to move" do
+    expect(robot1.turn_left).to eq(Robot.new(Position.new(5,5),Direction.west))
+  end
+
 end
